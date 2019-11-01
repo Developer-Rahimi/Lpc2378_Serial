@@ -1,0 +1,2 @@
+Dependencies for Project 'Serial', Target 'Target 1': (DO NOT MODIFY !)
+F (.\LPC2300.s)(0x4BB1D016)(--cpu ARM7TDMI -g --apcs=interwork -I "C:\Keil\ARM\INC" -I "C:\Keil\ARM\INC\Philips" --list "LPC2300.lst" --xref -o "LPC2300.o")

@@ -1,0 +1,21 @@
+*** Creating Trace Output File 'Serial.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"lpc2300.o"'
+### List of Objects: adding '"main.o"'
+### List of Objects: adding '"serial.o"'
+### ADS-LD Command completed:
+--cpu ARM7TDMI "lpc2300.o" "main.o" "serial.o" --strict --scatter "Serial.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\Serial.map" -o "Serial.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: 'Serial.axf'
+### ADS-LD Command File: 'Serial.lnp'
+### Checking for dirty Components...
+### Creating CmdFile 'Serial.lnp', Handle=0x00000B34
+### Writing '.lnp' file
+### ADS-LD Command file 'Serial.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

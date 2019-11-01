@@ -1,0 +1,8 @@
+Dependencies for Project 'Serial', Target 'LPC2300': (DO NOT MODIFY !)
+F (.\LPC2300.s)(0x5DBC795C)(--cpu ARM7TDMI -g --apcs=interwork -I "C:\Keil\ARM\INC" -I "C:\Keil\ARM\INC\Philips" --list "LPC2300.lst" --xref -o ".\Obj\LPC2300.o")
+F (..\User\main.c)(0x5DBC792F)(-c --cpu ARM7TDMI -g -O0 --apcs=interwork -I "C:\Keil\ARM\INC" -I "C:\Keil\ARM\INC\Philips" -o ".\Obj\main.o" --omf_browse ".\Obj\main.crf" --depend ".\Obj\main.d")
+I (C:\Keil\ARM\INC\Philips\lpc23xx.h)(0x4BB1D0D8)
+I (..\User\Serial.h)(0x5DB88DAC)
+F (..\User\Serial.c)(0x5DBC7AFB)(-c --cpu ARM7TDMI -g -O0 --apcs=interwork -I "C:\Keil\ARM\INC" -I "C:\Keil\ARM\INC\Philips" -o ".\Obj\serial.o" --omf_browse ".\Obj\serial.crf" --depend ".\Obj\serial.d")
+I (C:\Keil\ARM\INC\Philips\lpc23xx.h)(0x4BB1D0D8)
+I (..\User\Serial.h)(0x5DB88DAC)
