@@ -1,0 +1,3055 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+D:\Lpc2378\Serial\MDK-ARM\Serial.uvproj
+Project File Date:  11/03/2019
+
+<h2>Output:</h2>
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+..\User\main.c(15): warning:  #223-D: function "delay_ms" declared implicitly
+..\User\main.c:           delay_ms(1000);
+..\User\main.c:           ^
+..\User\main.c: ..\User\main.c: 1 warning, 0 errors
+compiling Serial.c...
+compiling IRQ.c...
+..\User\IRQ.c(18): error:  #20: identifier "rbuf" is undefined
+..\User\IRQ.c:            p = &rbuf;
+..\User\IRQ.c:                 ^
+..\User\IRQ.c(20): error:  #393: pointer to incomplete class type is not allowed
+..\User\IRQ.c:            if (((p->in - p->out) & ~(RBUF_SIZE-1)) == 0) {
+..\User\IRQ.c:                  ^
+..\User\IRQ.c(20): error:  #393: pointer to incomplete class type is not allowed
+..\User\IRQ.c:            if (((p->in - p->out) & ~(RBUF_SIZE-1)) == 0) {
+..\User\IRQ.c:                          ^
+..\User\IRQ.c(20): error:  #20: identifier "RBUF_SIZE" is undefined
+..\User\IRQ.c:            if (((p->in - p->out) & ~(RBUF_SIZE-1)) == 0) {
+..\User\IRQ.c:                                      ^
+..\User\IRQ.c(21): error:  #393: pointer to incomplete class type is not allowed
+..\User\IRQ.c:              p->buf [p->in & (RBUF_SIZE-1)] = U1RBR;
+..\User\IRQ.c:              ^
+..\User\IRQ.c(21): error:  #393: pointer to incomplete class type is not allowed
+..\User\IRQ.c:              p->buf [p->in & (RBUF_SIZE-1)] = U1RBR;
+..\User\IRQ.c:                      ^
+..\User\IRQ.c(22): error:  #393: pointer to incomplete class type is not allowed
+..\User\IRQ.c:              p->in++;
+..\User\IRQ.c:              ^
+..\User\IRQ.c(27): error:  #20: identifier "tbuf" is undefined
+..\User\IRQ.c:            p = &tbuf;
+..\User\IRQ.c:                 ^
+..\User\IRQ.c(29): error:  #393: pointer to incomplete class type is not allowed
+..\User\IRQ.c:            if (p->in != p->out) {
+..\User\IRQ.c:                ^
+..\User\IRQ.c(29): error:  #393: pointer to incomplete class type is not allowed
+..\User\IRQ.c:            if (p->in != p->out) {
+..\User\IRQ.c:                         ^
+..\User\IRQ.c(30): error:  #393: pointer to incomplete class type is not allowed
+..\User\IRQ.c:              U1THR = p->buf [p->out & (TBUF_SIZE-1)];
+..\User\IRQ.c:                      ^
+..\User\IRQ.c(30): error:  #393: pointer to incomplete class type is not allowed
+..\User\IRQ.c:              U1THR = p->buf [p->out & (TBUF_SIZE-1)];
+..\User\IRQ.c:                              ^
+..\User\IRQ.c(30): error:  #20: identifier "TBUF_SIZE" is undefined
+..\User\IRQ.c:              U1THR = p->buf [p->out & (TBUF_SIZE-1)];
+..\User\IRQ.c:                                        ^
+..\User\IRQ.c(31): error:  #393: pointer to incomplete class type is not allowed
+..\User\IRQ.c:              p->out++;
+..\User\IRQ.c:              ^
+..\User\IRQ.c(32): error:  #20: identifier "tx_restart" is undefined
+..\User\IRQ.c:              tx_restart = 0;
+..\User\IRQ.c:              ^
+..\User\IRQ.c(35): error:  #20: identifier "tx_restart" is undefined
+..\User\IRQ.c:              tx_restart = 1;
+..\User\IRQ.c:              ^
+..\User\IRQ.c: ..\User\IRQ.c: 0 warnings, 16 errors
+Target not created
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+..\User\main.c(15): warning:  #223-D: function "delay_ms" declared implicitly
+..\User\main.c:           delay_ms(1000);
+..\User\main.c:           ^
+..\User\main.c: ..\User\main.c: 1 warning, 0 errors
+compiling Serial.c...
+compiling IRQ.c...
+..\User\IRQ.c(18): error:  #20: identifier "rbuf" is undefined
+..\User\IRQ.c:            p = &rbuf;
+..\User\IRQ.c:                 ^
+..\User\IRQ.c(20): error:  #393: pointer to incomplete class type is not allowed
+..\User\IRQ.c:            if (((p->in - p->out) & ~(RBUF_SIZE-1)) == 0) {
+..\User\IRQ.c:                  ^
+..\User\IRQ.c(20): error:  #393: pointer to incomplete class type is not allowed
+..\User\IRQ.c:            if (((p->in - p->out) & ~(RBUF_SIZE-1)) == 0) {
+..\User\IRQ.c:                          ^
+..\User\IRQ.c(20): error:  #20: identifier "RBUF_SIZE" is undefined
+..\User\IRQ.c:            if (((p->in - p->out) & ~(RBUF_SIZE-1)) == 0) {
+..\User\IRQ.c:                                      ^
+..\User\IRQ.c(21): error:  #393: pointer to incomplete class type is not allowed
+..\User\IRQ.c:              p->buf [p->in & (RBUF_SIZE-1)] = U1RBR;
+..\User\IRQ.c:              ^
+..\User\IRQ.c(21): error:  #393: pointer to incomplete class type is not allowed
+..\User\IRQ.c:              p->buf [p->in & (RBUF_SIZE-1)] = U1RBR;
+..\User\IRQ.c:                      ^
+..\User\IRQ.c(22): error:  #393: pointer to incomplete class type is not allowed
+..\User\IRQ.c:              p->in++;
+..\User\IRQ.c:              ^
+..\User\IRQ.c(27): error:  #20: identifier "tbuf" is undefined
+..\User\IRQ.c:            p = &tbuf;
+..\User\IRQ.c:                 ^
+..\User\IRQ.c(29): error:  #393: pointer to incomplete class type is not allowed
+..\User\IRQ.c:            if (p->in != p->out) {
+..\User\IRQ.c:                ^
+..\User\IRQ.c(29): error:  #393: pointer to incomplete class type is not allowed
+..\User\IRQ.c:            if (p->in != p->out) {
+..\User\IRQ.c:                         ^
+..\User\IRQ.c(30): error:  #393: pointer to incomplete class type is not allowed
+..\User\IRQ.c:              U1THR = p->buf [p->out & (TBUF_SIZE-1)];
+..\User\IRQ.c:                      ^
+..\User\IRQ.c(30): error:  #393: pointer to incomplete class type is not allowed
+..\User\IRQ.c:              U1THR = p->buf [p->out & (TBUF_SIZE-1)];
+..\User\IRQ.c:                              ^
+..\User\IRQ.c(30): error:  #20: identifier "TBUF_SIZE" is undefined
+..\User\IRQ.c:              U1THR = p->buf [p->out & (TBUF_SIZE-1)];
+..\User\IRQ.c:                                        ^
+..\User\IRQ.c(31): error:  #393: pointer to incomplete class type is not allowed
+..\User\IRQ.c:              p->out++;
+..\User\IRQ.c:              ^
+..\User\IRQ.c(32): error:  #20: identifier "tx_restart" is undefined
+..\User\IRQ.c:              tx_restart = 0;
+..\User\IRQ.c:              ^
+..\User\IRQ.c(35): error:  #20: identifier "tx_restart" is undefined
+..\User\IRQ.c:              tx_restart = 1;
+..\User\IRQ.c:              ^
+..\User\IRQ.c: ..\User\IRQ.c: 0 warnings, 16 errors
+Target not created
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+compiling Delay.c...
+..\User\Delay.c(18): warning:  #1-D: last line of file ends without a newline
+..\User\Delay.c:   }
+..\User\Delay.c:    ^
+..\User\Delay.c: ..\User\Delay.c: 1 warning, 0 errors
+linking...
+.\Obj\Serial.axf: Error: L6218E: Undefined symbol sio_irq (referred from serial.o).
+.\Obj\Serial.axf: Not enough information to list image symbols.
+.\Obj\Serial.axf: Not enough information to list the image map.
+.\Obj\Serial.axf: Finished: 2 information, 0 warning and 1 error messages.
+Target not created
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(6): error:  #35: #error directive: RBUF_SIZE is too small.  It must be larger than 1.
+..\User\Serial.c:   #error RBUF_SIZE is too small.  It must be larger than 1.
+..\User\Serial.c:    ^
+..\User\Serial.c: ..\User\Serial.c: 0 warnings, 1 error
+compiling Delay.c...
+..\User\Delay.c(18): warning:  #1-D: last line of file ends without a newline
+..\User\Delay.c:   }
+..\User\Delay.c:    ^
+..\User\Delay.c: ..\User\Delay.c: 1 warning, 0 errors
+Target not created
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+compiling Delay.c...
+..\User\Delay.c(18): warning:  #1-D: last line of file ends without a newline
+..\User\Delay.c:   }
+..\User\Delay.c:    ^
+..\User\Delay.c: ..\User\Delay.c: 1 warning, 0 errors
+linking...
+.\Obj\Serial.axf: Error: L6218E: Undefined symbol InitSerial (referred from main.o).
+.\Obj\Serial.axf: Error: L6218E: Undefined symbol SerialPrint (referred from main.o).
+.\Obj\Serial.axf: Not enough information to list image symbols.
+.\Obj\Serial.axf: Not enough information to list the image map.
+.\Obj\Serial.axf: Finished: 2 information, 0 warning and 2 error messages.
+Target not created
+Build target 'LPC2300'
+compiling Serial.c...
+..\User\Serial.c(58): error:  #70: incomplete type is not allowed
+..\User\Serial.c:   static struct buf_st rbuf_urt2 = { 0, 0, };
+..\User\Serial.c:                        ^
+..\User\Serial.c(61): error:  #70: incomplete type is not allowed
+..\User\Serial.c:   static struct buf_st tbuf_urt2 = { 0, 0, };
+..\User\Serial.c:                        ^
+..\User\Serial.c(67): error:  #147: declaration is incompatible with "struct buf_uart1 tbuf_urt1" (declared at line 55)
+..\User\Serial.c:   static struct buf_st tbuf_urt1 = { 0, 0, };
+..\User\Serial.c:                        ^
+..\User\Serial.c(67): error:  #70: incomplete type is not allowed
+..\User\Serial.c:   static struct buf_st tbuf_urt1 = { 0, 0, };
+..\User\Serial.c:                        ^
+..\User\Serial.c(45): warning:  #177-D: variable "rbuf_urt0" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart0 rbuf_urt0 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(48): warning:  #177-D: variable "tbuf_urt0" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart0 tbuf_urt0 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(52): warning:  #177-D: variable "rbuf_urt1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 rbuf_urt1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(55): warning:  #177-D: variable "tbuf_urt1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_urt1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 4 warnings, 4 errors
+Target not created
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(58): error:  #70: incomplete type is not allowed
+..\User\Serial.c:   static struct buf_st rbuf_urt2 = { 0, 0, };
+..\User\Serial.c:                        ^
+..\User\Serial.c(61): error:  #70: incomplete type is not allowed
+..\User\Serial.c:   static struct buf_st tbuf_urt2 = { 0, 0, };
+..\User\Serial.c:                        ^
+..\User\Serial.c(67): error:  #147: declaration is incompatible with "struct buf_uart1 tbuf_urt1" (declared at line 55)
+..\User\Serial.c:   static struct buf_st tbuf_urt1 = { 0, 0, };
+..\User\Serial.c:                        ^
+..\User\Serial.c(67): error:  #70: incomplete type is not allowed
+..\User\Serial.c:   static struct buf_st tbuf_urt1 = { 0, 0, };
+..\User\Serial.c:                        ^
+..\User\Serial.c(45): warning:  #177-D: variable "rbuf_urt0" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart0 rbuf_urt0 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(48): warning:  #177-D: variable "tbuf_urt0" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart0 tbuf_urt0 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(52): warning:  #177-D: variable "rbuf_urt1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 rbuf_urt1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(55): warning:  #177-D: variable "tbuf_urt1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_urt1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 4 warnings, 4 errors
+compiling Delay.c...
+..\User\Delay.c(18): warning:  #1-D: last line of file ends without a newline
+..\User\Delay.c:   }
+..\User\Delay.c:    ^
+..\User\Delay.c: ..\User\Delay.c: 1 warning, 0 errors
+Target not created
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(64): error:  #147: declaration is incompatible with "struct buf_uart2 rbuf_urt2" (declared at line 58)
+..\User\Serial.c:   static struct buf_uart3 rbuf_urt2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(67): error:  #147: declaration is incompatible with "struct buf_uart1 tbuf_urt1" (declared at line 55)
+..\User\Serial.c:   static struct buf_uart3 tbuf_urt1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(45): warning:  #177-D: variable "rbuf_urt0" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart0 rbuf_urt0 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(48): warning:  #177-D: variable "tbuf_urt0" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart0 tbuf_urt0 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(52): warning:  #177-D: variable "rbuf_urt1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 rbuf_urt1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(55): warning:  #177-D: variable "tbuf_urt1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_urt1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(58): warning:  #177-D: variable "rbuf_urt2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 rbuf_urt2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(61): warning:  #177-D: variable "tbuf_urt2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_urt2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(64): warning:  #177-D: variable "rbuf_urt2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 rbuf_urt2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(67): warning:  #177-D: variable "tbuf_urt1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_urt1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 8 warnings, 2 errors
+compiling Delay.c...
+..\User\Delay.c(18): warning:  #1-D: last line of file ends without a newline
+..\User\Delay.c:   }
+..\User\Delay.c:    ^
+..\User\Delay.c: ..\User\Delay.c: 1 warning, 0 errors
+Target not created
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(45): warning:  #177-D: variable "rbuf_urt0" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart0 rbuf_urt0 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(48): warning:  #177-D: variable "tbuf_urt0" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart0 tbuf_urt0 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(52): warning:  #177-D: variable "rbuf_urt1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 rbuf_urt1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(55): warning:  #177-D: variable "tbuf_urt1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_urt1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(58): warning:  #177-D: variable "rbuf_urt2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 rbuf_urt2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(61): warning:  #177-D: variable "tbuf_urt2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_urt2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(64): warning:  #177-D: variable "rbuf_urt3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 rbuf_urt3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(67): warning:  #177-D: variable "tbuf_urt3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_urt3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 8 warnings, 0 errors
+compiling Delay.c...
+..\User\Delay.c(18): warning:  #1-D: last line of file ends without a newline
+..\User\Delay.c:   }
+..\User\Delay.c:    ^
+..\User\Delay.c: ..\User\Delay.c: 1 warning, 0 errors
+linking...
+.\Obj\Serial.axf: Error: L6218E: Undefined symbol InitSerial (referred from main.o).
+.\Obj\Serial.axf: Error: L6218E: Undefined symbol SerialPrint (referred from main.o).
+.\Obj\Serial.axf: Not enough information to list image symbols.
+.\Obj\Serial.axf: Not enough information to list the image map.
+.\Obj\Serial.axf: Finished: 2 information, 0 warning and 2 error messages.
+Target not created
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(5): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(53): warning:  #177-D: variable "rbuf_urt1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 rbuf_urt1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(56): warning:  #177-D: variable "tbuf_urt1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_urt1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(59): warning:  #177-D: variable "rbuf_urt2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 rbuf_urt2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(62): warning:  #177-D: variable "tbuf_urt2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_urt2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(65): warning:  #177-D: variable "rbuf_urt3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 rbuf_urt3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(68): warning:  #177-D: variable "tbuf_urt3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_urt3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 7 warnings, 0 errors
+compiling Delay.c...
+..\User\Delay.c(18): warning:  #1-D: last line of file ends without a newline
+..\User\Delay.c:   }
+..\User\Delay.c:    ^
+..\User\Delay.c: ..\User\Delay.c: 1 warning, 0 errors
+linking...
+.\Obj\Serial.axf: Error: L6218E: Undefined symbol InitSerial (referred from main.o).
+.\Obj\Serial.axf: Error: L6218E: Undefined symbol SerialPrint (referred from main.o).
+.\Obj\Serial.axf: Not enough information to list image symbols.
+.\Obj\Serial.axf: Not enough information to list the image map.
+.\Obj\Serial.axf: Finished: 2 information, 0 warning and 2 error messages.
+Target not created
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(129): error:  #20: identifier "sio_irq2" is undefined
+..\User\Serial.c:               VICVectAddr6 = (unsigned long)sio_irq2;
+..\User\Serial.c:                                             ^
+..\User\Serial.c(5): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(53): warning:  #177-D: variable "rbuf_urt1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 rbuf_urt1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(56): warning:  #177-D: variable "tbuf_urt1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_urt1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(59): warning:  #177-D: variable "rbuf_urt2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 rbuf_urt2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(62): warning:  #177-D: variable "tbuf_urt2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_urt2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(65): warning:  #177-D: variable "rbuf_urt3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 rbuf_urt3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(68): warning:  #177-D: variable "tbuf_urt3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_urt3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 7 warnings, 1 error
+compiling Delay.c...
+..\User\Delay.c(18): warning:  #1-D: last line of file ends without a newline
+..\User\Delay.c:   }
+..\User\Delay.c:    ^
+..\User\Delay.c: ..\User\Delay.c: 1 warning, 0 errors
+Target not created
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(5): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(53): warning:  #177-D: variable "rbuf_urt1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 rbuf_urt1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(56): warning:  #177-D: variable "tbuf_urt1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_urt1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(59): warning:  #177-D: variable "rbuf_urt2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 rbuf_urt2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(62): warning:  #177-D: variable "tbuf_urt2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_urt2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(65): warning:  #177-D: variable "rbuf_urt3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 rbuf_urt3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(68): warning:  #177-D: variable "tbuf_urt3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_urt3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 7 warnings, 0 errors
+compiling Delay.c...
+..\User\Delay.c(18): warning:  #1-D: last line of file ends without a newline
+..\User\Delay.c:   }
+..\User\Delay.c:    ^
+..\User\Delay.c: ..\User\Delay.c: 1 warning, 0 errors
+linking...
+Program Size: Code=2040 RO-data=32 RW-data=4 ZI-data=3500  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 8 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(194): error:  #20: identifier "rbuff" is undefined
+..\User\Serial.c:       struct buf_st_uart0 *p = &rbuff;
+..\User\Serial.c:                                 ^
+..\User\Serial.c(195): error:  #20: identifier "SIO_RBUFLENF" is undefined
+..\User\Serial.c:       if (SIO_RBUFLENF == 0)
+..\User\Serial.c:           ^
+..\User\Serial.c(197): error:  #393: pointer to incomplete class type is not allowed
+..\User\Serial.c:       return (p->buf [(p->out++) & (RBUF_SIZE - 1)]);
+..\User\Serial.c:               ^
+..\User\Serial.c(197): error:  #393: pointer to incomplete class type is not allowed
+..\User\Serial.c:       return (p->buf [(p->out++) & (RBUF_SIZE - 1)]);
+..\User\Serial.c:                        ^
+..\User\Serial.c(200): error:  #20: identifier "rbuf" is undefined
+..\User\Serial.c:       struct buf_st *p = &rbuf;
+..\User\Serial.c:                           ^
+..\User\Serial.c(201): error:  #20: identifier "SIO_RBUFLEN" is undefined
+..\User\Serial.c:       if (SIO_RBUFLEN == 0)
+..\User\Serial.c:           ^
+..\User\Serial.c(203): error:  #393: pointer to incomplete class type is not allowed
+..\User\Serial.c:       return (p->buf [(p->out++) & (RBUF_SIZE - 1)]);
+..\User\Serial.c:               ^
+..\User\Serial.c(203): error:  #393: pointer to incomplete class type is not allowed
+..\User\Serial.c:       return (p->buf [(p->out++) & (RBUF_SIZE - 1)]);
+..\User\Serial.c:                        ^
+..\User\Serial.c(206): error:  #20: identifier "rbuf" is undefined
+..\User\Serial.c:       struct buf_st *p = &rbuf;
+..\User\Serial.c:                           ^
+..\User\Serial.c(207): error:  #20: identifier "SIO_RBUFLEN" is undefined
+..\User\Serial.c:       if (SIO_RBUFLEN == 0)
+..\User\Serial.c:           ^
+..\User\Serial.c(209): error:  #393: pointer to incomplete class type is not allowed
+..\User\Serial.c:       return (p->buf [(p->out++) & (RBUF_SIZE - 1)]);
+..\User\Serial.c:               ^
+..\User\Serial.c(209): error:  #393: pointer to incomplete class type is not allowed
+..\User\Serial.c:       return (p->buf [(p->out++) & (RBUF_SIZE - 1)]);
+..\User\Serial.c:                        ^
+..\User\Serial.c(212): error:  #20: identifier "rbuf" is undefined
+..\User\Serial.c:       struct buf_st *p = &rbuf;
+..\User\Serial.c:                           ^
+..\User\Serial.c(213): error:  #20: identifier "SIO_RBUFLEN" is undefined
+..\User\Serial.c:       if (SIO_RBUFLEN == 0)
+..\User\Serial.c:           ^
+..\User\Serial.c(215): error:  #393: pointer to incomplete class type is not allowed
+..\User\Serial.c:       return (p->buf [(p->out++) & (RBUF_SIZE - 1)]);
+..\User\Serial.c:               ^
+..\User\Serial.c(215): error:  #393: pointer to incomplete class type is not allowed
+..\User\Serial.c:       return (p->buf [(p->out++) & (RBUF_SIZE - 1)]);
+..\User\Serial.c:                        ^
+..\User\Serial.c(217): warning:  #1-D: last line of file ends without a newline
+..\User\Serial.c:    
+..\User\Serial.c:    ^
+..\User\Serial.c(5): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(53): warning:  #177-D: variable "rbuf_urt1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 rbuf_urt1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(56): warning:  #177-D: variable "tbuf_urt1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_urt1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(59): warning:  #177-D: variable "rbuf_urt2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 rbuf_urt2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(62): warning:  #177-D: variable "tbuf_urt2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_urt2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(65): warning:  #177-D: variable "rbuf_urt3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 rbuf_urt3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(68): warning:  #177-D: variable "tbuf_urt3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_urt3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 8 warnings, 16 errors
+compiling Delay.c...
+..\User\Delay.c(18): warning:  #1-D: last line of file ends without a newline
+..\User\Delay.c:   }
+..\User\Delay.c:    ^
+..\User\Delay.c: ..\User\Delay.c: 1 warning, 0 errors
+Target not created
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(194): error:  #20: identifier "rbuf_uart0" is undefined
+..\User\Serial.c:       struct buf_st_uart0 *p = &rbuf_uart0;
+..\User\Serial.c:                                 ^
+..\User\Serial.c(197): error:  #393: pointer to incomplete class type is not allowed
+..\User\Serial.c:       return (p->buf [(p->out++) & (RBUF_SIZE - 1)]);
+..\User\Serial.c:               ^
+..\User\Serial.c(197): error:  #393: pointer to incomplete class type is not allowed
+..\User\Serial.c:       return (p->buf [(p->out++) & (RBUF_SIZE - 1)]);
+..\User\Serial.c:                        ^
+..\User\Serial.c(200): error:  #20: identifier "rbuf" is undefined
+..\User\Serial.c:       struct buf_st *p = &rbuf;
+..\User\Serial.c:                           ^
+..\User\Serial.c(201): error:  #20: identifier "SIO_RBUFLEN" is undefined
+..\User\Serial.c:       if (SIO_RBUFLEN == 0)
+..\User\Serial.c:           ^
+..\User\Serial.c(203): error:  #393: pointer to incomplete class type is not allowed
+..\User\Serial.c:       return (p->buf [(p->out++) & (RBUF_SIZE - 1)]);
+..\User\Serial.c:               ^
+..\User\Serial.c(203): error:  #393: pointer to incomplete class type is not allowed
+..\User\Serial.c:       return (p->buf [(p->out++) & (RBUF_SIZE - 1)]);
+..\User\Serial.c:                        ^
+..\User\Serial.c(206): error:  #20: identifier "rbuf" is undefined
+..\User\Serial.c:       struct buf_st *p = &rbuf;
+..\User\Serial.c:                           ^
+..\User\Serial.c(207): error:  #20: identifier "SIO_RBUFLEN" is undefined
+..\User\Serial.c:       if (SIO_RBUFLEN == 0)
+..\User\Serial.c:           ^
+..\User\Serial.c(209): error:  #393: pointer to incomplete class type is not allowed
+..\User\Serial.c:       return (p->buf [(p->out++) & (RBUF_SIZE - 1)]);
+..\User\Serial.c:               ^
+..\User\Serial.c(209): error:  #393: pointer to incomplete class type is not allowed
+..\User\Serial.c:       return (p->buf [(p->out++) & (RBUF_SIZE - 1)]);
+..\User\Serial.c:                        ^
+..\User\Serial.c(212): error:  #20: identifier "rbuf" is undefined
+..\User\Serial.c:       struct buf_st *p = &rbuf;
+..\User\Serial.c:                           ^
+..\User\Serial.c(213): error:  #20: identifier "SIO_RBUFLEN" is undefined
+..\User\Serial.c:       if (SIO_RBUFLEN == 0)
+..\User\Serial.c:           ^
+..\User\Serial.c(215): error:  #393: pointer to incomplete class type is not allowed
+..\User\Serial.c:       return (p->buf [(p->out++) & (RBUF_SIZE - 1)]);
+..\User\Serial.c:               ^
+..\User\Serial.c(215): error:  #393: pointer to incomplete class type is not allowed
+..\User\Serial.c:       return (p->buf [(p->out++) & (RBUF_SIZE - 1)]);
+..\User\Serial.c:                        ^
+..\User\Serial.c(217): warning:  #1-D: last line of file ends without a newline
+..\User\Serial.c:    
+..\User\Serial.c:    ^
+..\User\Serial.c(5): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(53): warning:  #177-D: variable "rbuf_urt1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 rbuf_urt1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(56): warning:  #177-D: variable "tbuf_urt1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_urt1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(59): warning:  #177-D: variable "rbuf_urt2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 rbuf_urt2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(62): warning:  #177-D: variable "tbuf_urt2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_urt2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(65): warning:  #177-D: variable "rbuf_urt3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 rbuf_urt3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(68): warning:  #177-D: variable "tbuf_urt3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_urt3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 8 warnings, 15 errors
+compiling Delay.c...
+..\User\Delay.c(18): warning:  #1-D: last line of file ends without a newline
+..\User\Delay.c:   }
+..\User\Delay.c:    ^
+..\User\Delay.c: ..\User\Delay.c: 1 warning, 0 errors
+Target not created
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(194): error:  #20: identifier "rbuf_uart0" is undefined
+..\User\Serial.c:       struct buf_st_uart0 *p = &rbuf_uart0;
+..\User\Serial.c:                                 ^
+..\User\Serial.c(197): error:  #393: pointer to incomplete class type is not allowed
+..\User\Serial.c:       return (p->buf [(p->out++) & (RBUF_SIZE - 1)]);
+..\User\Serial.c:               ^
+..\User\Serial.c(197): error:  #393: pointer to incomplete class type is not allowed
+..\User\Serial.c:       return (p->buf [(p->out++) & (RBUF_SIZE - 1)]);
+..\User\Serial.c:                        ^
+..\User\Serial.c(200): error:  #20: identifier "rbuf_uart1" is undefined
+..\User\Serial.c:       struct buf_uart1 *p = &rbuf_uart1;
+..\User\Serial.c:                              ^
+..\User\Serial.c(206): error:  #20: identifier "rbuf_uart2" is undefined
+..\User\Serial.c:       struct buf_uart2 *p = &rbuf_uart2;
+..\User\Serial.c:                              ^
+..\User\Serial.c(212): error:  #20: identifier "rbuf_uart3" is undefined
+..\User\Serial.c:       struct buf_st_uart3 *p = &rbuf_uart3;
+..\User\Serial.c:                                 ^
+..\User\Serial.c(215): error:  #393: pointer to incomplete class type is not allowed
+..\User\Serial.c:       return (p->buf [(p->out++) & (RBUF_SIZE - 1)]);
+..\User\Serial.c:               ^
+..\User\Serial.c(215): error:  #393: pointer to incomplete class type is not allowed
+..\User\Serial.c:       return (p->buf [(p->out++) & (RBUF_SIZE - 1)]);
+..\User\Serial.c:                        ^
+..\User\Serial.c(217): warning:  #1-D: last line of file ends without a newline
+..\User\Serial.c:    
+..\User\Serial.c:    ^
+..\User\Serial.c(5): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(56): warning:  #177-D: variable "tbuf_urt1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_urt1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(62): warning:  #177-D: variable "tbuf_urt2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_urt2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(68): warning:  #177-D: variable "tbuf_urt3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_urt3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 5 warnings, 8 errors
+compiling Delay.c...
+..\User\Delay.c(18): warning:  #1-D: last line of file ends without a newline
+..\User\Delay.c:   }
+..\User\Delay.c:    ^
+..\User\Delay.c: ..\User\Delay.c: 1 warning, 0 errors
+Target not created
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(83): error:  #20: identifier "rbuf_urt0" is undefined
+..\User\Serial.c:            p = &rbuf_urt0;
+..\User\Serial.c:                 ^
+..\User\Serial.c(93): error:  #20: identifier "tbuf_urt0" is undefined
+..\User\Serial.c:            p = &tbuf_urt0;
+..\User\Serial.c:                 ^
+..\User\Serial.c(194): error:  #144: a value of type "struct buf_uart0 *" cannot be used to initialize an entity of type "struct buf_st_uart0 *"
+..\User\Serial.c:       struct buf_st_uart0 *p = &rbuf_uart0;
+..\User\Serial.c:                                ^
+..\User\Serial.c(195): error:  #20: identifier "rbuf_urt0" is undefined
+..\User\Serial.c:       if (SIO_RBUFLEN_UART0 == 0)
+..\User\Serial.c:           ^
+..\User\Serial.c(197): error:  #393: pointer to incomplete class type is not allowed
+..\User\Serial.c:       return (p->buf [(p->out++) & (RBUF_SIZE - 1)]);
+..\User\Serial.c:               ^
+..\User\Serial.c(197): error:  #393: pointer to incomplete class type is not allowed
+..\User\Serial.c:       return (p->buf [(p->out++) & (RBUF_SIZE - 1)]);
+..\User\Serial.c:                        ^
+..\User\Serial.c(201): error:  #20: identifier "rbuf_urt1" is undefined
+..\User\Serial.c:       if (SIO_RBUFLEN_UART1 == 0)
+..\User\Serial.c:           ^
+..\User\Serial.c(207): error:  #20: identifier "rbuf_urt2" is undefined
+..\User\Serial.c:       if (SIO_RBUFLEN_UART2 == 0)
+..\User\Serial.c:           ^
+..\User\Serial.c(212): error:  #144: a value of type "struct buf_uart3 *" cannot be used to initialize an entity of type "struct buf_st_uart3 *"
+..\User\Serial.c:       struct buf_st_uart3 *p = &rbuf_uart3;
+..\User\Serial.c:                                ^
+..\User\Serial.c(213): error:  #20: identifier "rbuf_urt3" is undefined
+..\User\Serial.c:       if (SIO_RBUFLEN_UART3 == 0)
+..\User\Serial.c:           ^
+..\User\Serial.c(215): error:  #393: pointer to incomplete class type is not allowed
+..\User\Serial.c:       return (p->buf [(p->out++) & (RBUF_SIZE - 1)]);
+..\User\Serial.c:               ^
+..\User\Serial.c(215): error:  #393: pointer to incomplete class type is not allowed
+..\User\Serial.c:       return (p->buf [(p->out++) & (RBUF_SIZE - 1)]);
+..\User\Serial.c:                        ^
+..\User\Serial.c(217): warning:  #1-D: last line of file ends without a newline
+..\User\Serial.c:    
+..\User\Serial.c:    ^
+..\User\Serial.c(5): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(49): warning:  #177-D: variable "tbuf_uart0" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart0 tbuf_uart0 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(56): warning:  #177-D: variable "tbuf_uart1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_uart1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(62): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(68): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 6 warnings, 12 errors
+compiling Delay.c...
+..\User\Delay.c(18): warning:  #1-D: last line of file ends without a newline
+..\User\Delay.c:   }
+..\User\Delay.c:    ^
+..\User\Delay.c: ..\User\Delay.c: 1 warning, 0 errors
+Target not created
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(83): error:  #20: identifier "rbuf_urt0" is undefined
+..\User\Serial.c:            p = &rbuf_urt0;
+..\User\Serial.c:                 ^
+..\User\Serial.c(93): error:  #20: identifier "tbuf_urt0" is undefined
+..\User\Serial.c:            p = &tbuf_urt0;
+..\User\Serial.c:                 ^
+..\User\Serial.c(194): error:  #144: a value of type "struct buf_uart0 *" cannot be used to initialize an entity of type "struct buf_st_uart0 *"
+..\User\Serial.c:       struct buf_st_uart0 *p = &rbuf_uart0;
+..\User\Serial.c:                                ^
+..\User\Serial.c(195): error:  #20: identifier "rbuf_urt0" is undefined
+..\User\Serial.c:       if (SIO_RBUFLEN_UART0 == 0)
+..\User\Serial.c:           ^
+..\User\Serial.c(197): error:  #393: pointer to incomplete class type is not allowed
+..\User\Serial.c:       return (p->buf [(p->out++) & (RBUF_SIZE - 1)]);
+..\User\Serial.c:               ^
+..\User\Serial.c(197): error:  #393: pointer to incomplete class type is not allowed
+..\User\Serial.c:       return (p->buf [(p->out++) & (RBUF_SIZE - 1)]);
+..\User\Serial.c:                        ^
+..\User\Serial.c(201): error:  #20: identifier "rbuf_urt1" is undefined
+..\User\Serial.c:       if (SIO_RBUFLEN_UART1 == 0)
+..\User\Serial.c:           ^
+..\User\Serial.c(207): error:  #20: identifier "rbuf_urt2" is undefined
+..\User\Serial.c:       if (SIO_RBUFLEN_UART2 == 0)
+..\User\Serial.c:           ^
+..\User\Serial.c(212): error:  #144: a value of type "struct buf_uart3 *" cannot be used to initialize an entity of type "struct buf_st_uart3 *"
+..\User\Serial.c:       struct buf_st_uart3 *p = &rbuf_uart3;
+..\User\Serial.c:                                ^
+..\User\Serial.c(213): error:  #20: identifier "rbuf_urt3" is undefined
+..\User\Serial.c:       if (SIO_RBUFLEN_UART3 == 0)
+..\User\Serial.c:           ^
+..\User\Serial.c(215): error:  #393: pointer to incomplete class type is not allowed
+..\User\Serial.c:       return (p->buf [(p->out++) & (RBUF_SIZE - 1)]);
+..\User\Serial.c:               ^
+..\User\Serial.c(215): error:  #393: pointer to incomplete class type is not allowed
+..\User\Serial.c:       return (p->buf [(p->out++) & (RBUF_SIZE - 1)]);
+..\User\Serial.c:                        ^
+..\User\Serial.c(217): warning:  #1-D: last line of file ends without a newline
+..\User\Serial.c:    
+..\User\Serial.c:    ^
+..\User\Serial.c(5): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(49): warning:  #177-D: variable "tbuf_uart0" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart0 tbuf_uart0 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(56): warning:  #177-D: variable "tbuf_uart1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_uart1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(62): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(68): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 6 warnings, 12 errors
+compiling Delay.c...
+..\User\Delay.c(18): warning:  #1-D: last line of file ends without a newline
+..\User\Delay.c:   }
+..\User\Delay.c:    ^
+..\User\Delay.c: ..\User\Delay.c: 1 warning, 0 errors
+Target not created
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(93): error:  #20: identifier "tbuf_urt0" is undefined
+..\User\Serial.c:            p = &tbuf_urt0;
+..\User\Serial.c:                 ^
+..\User\Serial.c(194): error:  #144: a value of type "struct buf_uart0 *" cannot be used to initialize an entity of type "struct buf_st_uart0 *"
+..\User\Serial.c:       struct buf_st_uart0 *p = &rbuf_uart0;
+..\User\Serial.c:                                ^
+..\User\Serial.c(195): error:  #20: identifier "rbuf_urt0" is undefined
+..\User\Serial.c:       if (SIO_RBUFLEN_UART0 == 0)
+..\User\Serial.c:           ^
+..\User\Serial.c(197): error:  #393: pointer to incomplete class type is not allowed
+..\User\Serial.c:       return (p->buf [(p->out++) & (RBUF_SIZE - 1)]);
+..\User\Serial.c:               ^
+..\User\Serial.c(197): error:  #393: pointer to incomplete class type is not allowed
+..\User\Serial.c:       return (p->buf [(p->out++) & (RBUF_SIZE - 1)]);
+..\User\Serial.c:                        ^
+..\User\Serial.c(201): error:  #20: identifier "rbuf_urt1" is undefined
+..\User\Serial.c:       if (SIO_RBUFLEN_UART1 == 0)
+..\User\Serial.c:           ^
+..\User\Serial.c(207): error:  #20: identifier "rbuf_urt2" is undefined
+..\User\Serial.c:       if (SIO_RBUFLEN_UART2 == 0)
+..\User\Serial.c:           ^
+..\User\Serial.c(212): error:  #144: a value of type "struct buf_uart3 *" cannot be used to initialize an entity of type "struct buf_st_uart3 *"
+..\User\Serial.c:       struct buf_st_uart3 *p = &rbuf_uart3;
+..\User\Serial.c:                                ^
+..\User\Serial.c(213): error:  #20: identifier "rbuf_urt3" is undefined
+..\User\Serial.c:       if (SIO_RBUFLEN_UART3 == 0)
+..\User\Serial.c:           ^
+..\User\Serial.c(215): error:  #393: pointer to incomplete class type is not allowed
+..\User\Serial.c:       return (p->buf [(p->out++) & (RBUF_SIZE - 1)]);
+..\User\Serial.c:               ^
+..\User\Serial.c(215): error:  #393: pointer to incomplete class type is not allowed
+..\User\Serial.c:       return (p->buf [(p->out++) & (RBUF_SIZE - 1)]);
+..\User\Serial.c:                        ^
+..\User\Serial.c(217): warning:  #1-D: last line of file ends without a newline
+..\User\Serial.c:    
+..\User\Serial.c:    ^
+..\User\Serial.c(5): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(49): warning:  #177-D: variable "tbuf_uart0" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart0 tbuf_uart0 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(56): warning:  #177-D: variable "tbuf_uart1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_uart1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(62): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(68): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 6 warnings, 11 errors
+compiling Delay.c...
+..\User\Delay.c(18): warning:  #1-D: last line of file ends without a newline
+..\User\Delay.c:   }
+..\User\Delay.c:    ^
+..\User\Delay.c: ..\User\Delay.c: 1 warning, 0 errors
+Target not created
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(194): error:  #144: a value of type "struct buf_uart0 *" cannot be used to initialize an entity of type "struct buf_st_uart0 *"
+..\User\Serial.c:       struct buf_st_uart0 *p = &rbuf_uart0;
+..\User\Serial.c:                                ^
+..\User\Serial.c(195): error:  #20: identifier "rbuf_urt0" is undefined
+..\User\Serial.c:       if (SIO_RBUFLEN_UART0 == 0)
+..\User\Serial.c:           ^
+..\User\Serial.c(197): error:  #393: pointer to incomplete class type is not allowed
+..\User\Serial.c:       return (p->buf [(p->out++) & (RBUF_SIZE - 1)]);
+..\User\Serial.c:               ^
+..\User\Serial.c(197): error:  #393: pointer to incomplete class type is not allowed
+..\User\Serial.c:       return (p->buf [(p->out++) & (RBUF_SIZE - 1)]);
+..\User\Serial.c:                        ^
+..\User\Serial.c(201): error:  #20: identifier "rbuf_urt1" is undefined
+..\User\Serial.c:       if (SIO_RBUFLEN_UART1 == 0)
+..\User\Serial.c:           ^
+..\User\Serial.c(207): error:  #20: identifier "rbuf_urt2" is undefined
+..\User\Serial.c:       if (SIO_RBUFLEN_UART2 == 0)
+..\User\Serial.c:           ^
+..\User\Serial.c(212): error:  #144: a value of type "struct buf_uart3 *" cannot be used to initialize an entity of type "struct buf_st_uart3 *"
+..\User\Serial.c:       struct buf_st_uart3 *p = &rbuf_uart3;
+..\User\Serial.c:                                ^
+..\User\Serial.c(213): error:  #20: identifier "rbuf_urt3" is undefined
+..\User\Serial.c:       if (SIO_RBUFLEN_UART3 == 0)
+..\User\Serial.c:           ^
+..\User\Serial.c(215): error:  #393: pointer to incomplete class type is not allowed
+..\User\Serial.c:       return (p->buf [(p->out++) & (RBUF_SIZE - 1)]);
+..\User\Serial.c:               ^
+..\User\Serial.c(215): error:  #393: pointer to incomplete class type is not allowed
+..\User\Serial.c:       return (p->buf [(p->out++) & (RBUF_SIZE - 1)]);
+..\User\Serial.c:                        ^
+..\User\Serial.c(217): warning:  #1-D: last line of file ends without a newline
+..\User\Serial.c:    
+..\User\Serial.c:    ^
+..\User\Serial.c(5): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(56): warning:  #177-D: variable "tbuf_uart1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_uart1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(62): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(68): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 5 warnings, 10 errors
+compiling Delay.c...
+..\User\Delay.c(18): warning:  #1-D: last line of file ends without a newline
+..\User\Delay.c:   }
+..\User\Delay.c:    ^
+..\User\Delay.c: ..\User\Delay.c: 1 warning, 0 errors
+Target not created
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(195): error:  #20: identifier "rbuf_urt0" is undefined
+..\User\Serial.c:       if (SIO_RBUFLEN_UART0 == 0)
+..\User\Serial.c:           ^
+..\User\Serial.c(201): error:  #20: identifier "rbuf_urt1" is undefined
+..\User\Serial.c:       if (SIO_RBUFLEN_UART1 == 0)
+..\User\Serial.c:           ^
+..\User\Serial.c(207): error:  #20: identifier "rbuf_urt2" is undefined
+..\User\Serial.c:       if (SIO_RBUFLEN_UART2 == 0)
+..\User\Serial.c:           ^
+..\User\Serial.c(212): error:  #144: a value of type "struct buf_uart3 *" cannot be used to initialize an entity of type "struct buf_st_uart3 *"
+..\User\Serial.c:       struct buf_st_uart3 *p = &rbuf_uart3;
+..\User\Serial.c:                                ^
+..\User\Serial.c(213): error:  #20: identifier "rbuf_urt3" is undefined
+..\User\Serial.c:       if (SIO_RBUFLEN_UART3 == 0)
+..\User\Serial.c:           ^
+..\User\Serial.c(215): error:  #393: pointer to incomplete class type is not allowed
+..\User\Serial.c:       return (p->buf [(p->out++) & (RBUF_SIZE - 1)]);
+..\User\Serial.c:               ^
+..\User\Serial.c(215): error:  #393: pointer to incomplete class type is not allowed
+..\User\Serial.c:       return (p->buf [(p->out++) & (RBUF_SIZE - 1)]);
+..\User\Serial.c:                        ^
+..\User\Serial.c(217): warning:  #1-D: last line of file ends without a newline
+..\User\Serial.c:    
+..\User\Serial.c:    ^
+..\User\Serial.c(5): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(56): warning:  #177-D: variable "tbuf_uart1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_uart1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(62): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(68): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 5 warnings, 7 errors
+compiling Delay.c...
+..\User\Delay.c(18): warning:  #1-D: last line of file ends without a newline
+..\User\Delay.c:   }
+..\User\Delay.c:    ^
+..\User\Delay.c: ..\User\Delay.c: 1 warning, 0 errors
+Target not created
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(212): error:  #144: a value of type "struct buf_uart3 *" cannot be used to initialize an entity of type "struct buf_st_uart3 *"
+..\User\Serial.c:       struct buf_st_uart3 *p = &rbuf_uart3;
+..\User\Serial.c:                                ^
+..\User\Serial.c(215): error:  #393: pointer to incomplete class type is not allowed
+..\User\Serial.c:       return (p->buf [(p->out++) & (RBUF_SIZE - 1)]);
+..\User\Serial.c:               ^
+..\User\Serial.c(215): error:  #393: pointer to incomplete class type is not allowed
+..\User\Serial.c:       return (p->buf [(p->out++) & (RBUF_SIZE - 1)]);
+..\User\Serial.c:                        ^
+..\User\Serial.c(217): warning:  #1-D: last line of file ends without a newline
+..\User\Serial.c:    
+..\User\Serial.c:    ^
+..\User\Serial.c(5): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(56): warning:  #177-D: variable "tbuf_uart1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_uart1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(62): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(68): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 5 warnings, 3 errors
+compiling Delay.c...
+..\User\Delay.c(18): warning:  #1-D: last line of file ends without a newline
+..\User\Delay.c:   }
+..\User\Delay.c:    ^
+..\User\Delay.c: ..\User\Delay.c: 1 warning, 0 errors
+Target not created
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(217): warning:  #1-D: last line of file ends without a newline
+..\User\Serial.c:    
+..\User\Serial.c:    ^
+..\User\Serial.c(5): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(56): warning:  #177-D: variable "tbuf_uart1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_uart1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(62): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(68): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 5 warnings, 0 errors
+compiling Delay.c...
+..\User\Delay.c(18): warning:  #1-D: last line of file ends without a newline
+..\User\Delay.c:   }
+..\User\Delay.c:    ^
+..\User\Delay.c: ..\User\Delay.c: 1 warning, 0 errors
+linking...
+Program Size: Code=2340 RO-data=32 RW-data=4 ZI-data=3500  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 6 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(217): warning:  #1-D: last line of file ends without a newline
+..\User\Serial.c:    
+..\User\Serial.c:    ^
+..\User\Serial.c(5): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(56): warning:  #177-D: variable "tbuf_uart1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_uart1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(62): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(68): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 5 warnings, 0 errors
+compiling Delay.c...
+..\User\Delay.c(18): warning:  #1-D: last line of file ends without a newline
+..\User\Delay.c:   }
+..\User\Delay.c:    ^
+..\User\Delay.c: ..\User\Delay.c: 1 warning, 0 errors
+linking...
+Program Size: Code=2340 RO-data=32 RW-data=4 ZI-data=3500  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 6 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(217): warning:  #1-D: last line of file ends without a newline
+..\User\Serial.c:    
+..\User\Serial.c:    ^
+..\User\Serial.c(5): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(56): warning:  #177-D: variable "tbuf_uart1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_uart1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(62): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(68): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 5 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=2340 RO-data=32 RW-data=4 ZI-data=3500  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 5 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(217): warning:  #1-D: last line of file ends without a newline
+..\User\Serial.c:    
+..\User\Serial.c:    ^
+..\User\Serial.c(5): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(56): warning:  #177-D: variable "tbuf_uart1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_uart1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(62): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(68): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 5 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=2340 RO-data=32 RW-data=4 ZI-data=3500  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 5 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(5): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(56): warning:  #177-D: variable "tbuf_uart1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_uart1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(62): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(68): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 4 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=2340 RO-data=32 RW-data=4 ZI-data=3500  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 4 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(222): error:  #20: identifier "lengthf" is undefined
+..\User\Serial.c:        for( f=0;f<lengthf;f++)
+..\User\Serial.c:                   ^
+..\User\Serial.c(224): error:  #137: expression must be a modifiable lvalue
+..\User\Serial.c:               length=0;
+..\User\Serial.c:               ^
+..\User\Serial.c(226): warning:  #223-D: function "GetCharf" declared implicitly
+..\User\Serial.c:                       d= GetCharf();
+..\User\Serial.c:                          ^
+..\User\Serial.c(238): warning:  #223-D: function "delay_ms" declared implicitly
+..\User\Serial.c:                       delay_ms(1);
+..\User\Serial.c:                       ^
+..\User\Serial.c(242): warning:  #1-D: last line of file ends without a newline
+..\User\Serial.c:   }
+..\User\Serial.c:    ^
+..\User\Serial.c(5): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(56): warning:  #177-D: variable "tbuf_uart1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_uart1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(62): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(68): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 7 warnings, 2 errors
+compiling Delay.c...
+Target not created
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(5): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(56): warning:  #177-D: variable "tbuf_uart1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_uart1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(62): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(68): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 4 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=2340 RO-data=32 RW-data=4 ZI-data=3516  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 4 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(223): error:  #20: identifier "lengthf" is undefined
+..\User\Serial.c:        for( f=0;f<lengthf;f++)
+..\User\Serial.c:                   ^
+..\User\Serial.c(227): warning:  #223-D: function "GetCharf" declared implicitly
+..\User\Serial.c:                       d= GetCharf();
+..\User\Serial.c:                          ^
+..\User\Serial.c(239): warning:  #223-D: function "delay_ms" declared implicitly
+..\User\Serial.c:                       delay_ms(1);
+..\User\Serial.c:                       ^
+..\User\Serial.c(243): warning:  #1-D: last line of file ends without a newline
+..\User\Serial.c:   }
+..\User\Serial.c:    ^
+..\User\Serial.c(6): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(57): warning:  #177-D: variable "tbuf_uart1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_uart1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(63): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(69): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 7 warnings, 1 error
+compiling Delay.c...
+Target not created
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(227): warning:  #223-D: function "GetCharf" declared implicitly
+..\User\Serial.c:                       d= GetCharf();
+..\User\Serial.c:                          ^
+..\User\Serial.c(230): error:  #20: identifier "lengthf" is undefined
+..\User\Serial.c:                               lengthf++;
+..\User\Serial.c:                               ^
+..\User\Serial.c(239): warning:  #1-D: last line of file ends without a newline
+..\User\Serial.c:   }
+..\User\Serial.c:    ^
+..\User\Serial.c(6): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(57): warning:  #177-D: variable "tbuf_uart1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_uart1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(63): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(69): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 6 warnings, 1 error
+compiling Delay.c...
+Target not created
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(227): warning:  #223-D: function "GetCharf" declared implicitly
+..\User\Serial.c:                       d= GetCharf();
+..\User\Serial.c:                          ^
+..\User\Serial.c(239): warning:  #1-D: last line of file ends without a newline
+..\User\Serial.c:   }
+..\User\Serial.c:    ^
+..\User\Serial.c(6): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(57): warning:  #177-D: variable "tbuf_uart1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_uart1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(63): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(69): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 6 warnings, 0 errors
+compiling Delay.c...
+linking...
+.\Obj\Serial.axf: Error: L6218E: Undefined symbol GetCharf (referred from serial.o).
+.\Obj\Serial.axf: Not enough information to list image symbols.
+.\Obj\Serial.axf: Not enough information to list the image map.
+.\Obj\Serial.axf: Finished: 2 information, 0 warning and 1 error messages.
+Target not created
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(253): warning:  #1-D: last line of file ends without a newline
+..\User\Serial.c:   }
+..\User\Serial.c:    ^
+..\User\Serial.c(6): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(57): warning:  #177-D: variable "tbuf_uart1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_uart1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(63): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(69): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 5 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=2596 RO-data=32 RW-data=8 ZI-data=3496  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 5 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(253): warning:  #1-D: last line of file ends without a newline
+..\User\Serial.c:   }
+..\User\Serial.c:    ^
+..\User\Serial.c(6): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(57): warning:  #177-D: variable "tbuf_uart1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_uart1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(63): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(69): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 5 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=2596 RO-data=32 RW-data=8 ZI-data=3496  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 5 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(6): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(57): warning:  #177-D: variable "tbuf_uart1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_uart1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(63): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(69): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 4 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=2596 RO-data=32 RW-data=8 ZI-data=3496  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 4 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(219): warning:  #177-D: variable "f" was declared but never referenced
+..\User\Serial.c:       int f=0;
+..\User\Serial.c:           ^
+..\User\Serial.c(6): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(57): warning:  #177-D: variable "tbuf_uart1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_uart1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(63): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(69): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 5 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=2560 RO-data=32 RW-data=4 ZI-data=3516  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 5 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(6): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(57): warning:  #177-D: variable "tbuf_uart1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_uart1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(63): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(69): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 4 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=2556 RO-data=32 RW-data=4 ZI-data=3516  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 4 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(6): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(57): warning:  #177-D: variable "tbuf_uart1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_uart1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(63): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(69): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 4 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=2556 RO-data=32 RW-data=4 ZI-data=3516  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 4 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(6): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(57): warning:  #177-D: variable "tbuf_uart1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_uart1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(63): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(69): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 4 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=2572 RO-data=32 RW-data=4 ZI-data=3516  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 4 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(6): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(57): warning:  #177-D: variable "tbuf_uart1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_uart1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(63): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(69): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 4 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=2580 RO-data=32 RW-data=8 ZI-data=3512  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 4 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(6): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(57): warning:  #177-D: variable "tbuf_uart1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_uart1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(63): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(69): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 4 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=2596 RO-data=32 RW-data=8 ZI-data=3512  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 4 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(223): error:  #20: identifier "f" is undefined
+..\User\Serial.c:        for( f=0;f<length[Port];f++)
+..\User\Serial.c:             ^
+..\User\Serial.c(6): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(57): warning:  #177-D: variable "tbuf_uart1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_uart1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(63): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(69): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 4 warnings, 1 error
+compiling Delay.c...
+Target not created
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(6): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(57): warning:  #177-D: variable "tbuf_uart1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_uart1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(63): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(69): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 4 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=2636 RO-data=32 RW-data=8 ZI-data=3512  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 4 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(6): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(57): warning:  #177-D: variable "tbuf_uart1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_uart1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(63): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(69): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 4 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=2636 RO-data=32 RW-data=8 ZI-data=3512  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 4 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(6): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(57): warning:  #177-D: variable "tbuf_uart1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_uart1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(63): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(69): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 4 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=2648 RO-data=32 RW-data=8 ZI-data=3512  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 4 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(6): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(57): warning:  #177-D: variable "tbuf_uart1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_uart1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(63): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(69): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 4 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=2656 RO-data=32 RW-data=8 ZI-data=3512  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 4 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(219): warning:  #177-D: variable "f" was declared but never referenced
+..\User\Serial.c:       int f=0;
+..\User\Serial.c:           ^
+..\User\Serial.c(6): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(57): warning:  #177-D: variable "tbuf_uart1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_uart1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(63): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(69): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 5 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=2596 RO-data=32 RW-data=8 ZI-data=3512  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 5 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(219): warning:  #177-D: variable "f" was declared but never referenced
+..\User\Serial.c:       int f=0;
+..\User\Serial.c:           ^
+..\User\Serial.c(6): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(57): warning:  #177-D: variable "tbuf_uart1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_uart1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(63): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(69): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 5 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=2596 RO-data=32 RW-data=12 ZI-data=3500  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 5 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(219): warning:  #177-D: variable "f" was declared but never referenced
+..\User\Serial.c:       int f=0;
+..\User\Serial.c:           ^
+..\User\Serial.c(6): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(57): warning:  #177-D: variable "tbuf_uart1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_uart1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(63): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(69): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 5 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=2588 RO-data=32 RW-data=12 ZI-data=3500  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 5 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(6): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(57): warning:  #177-D: variable "tbuf_uart1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_uart1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(63): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(69): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 4 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=2636 RO-data=32 RW-data=12 ZI-data=3500  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 4 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(223): error:  #142: expression must have pointer-to-object type
+..\User\Serial.c:        for( f=0;f<length[Port];f++)
+..\User\Serial.c:                          ^
+..\User\Serial.c(237): warning:  #111-D: statement is unreachable
+..\User\Serial.c:                                               end=0;
+..\User\Serial.c:                                               ^
+..\User\Serial.c(6): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(57): warning:  #177-D: variable "tbuf_uart1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_uart1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(63): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(69): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 5 warnings, 1 error
+compiling Delay.c...
+Target not created
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(223): error:  #142: expression must have pointer-to-object type
+..\User\Serial.c:        for( f=0;f<length[Port];f++)
+..\User\Serial.c:                          ^
+..\User\Serial.c(6): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(57): warning:  #177-D: variable "tbuf_uart1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_uart1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(63): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(69): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 4 warnings, 1 error
+compiling Delay.c...
+Target not created
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(6): error:  #65: expected a ";"
+..\User\Serial.c:   int length=0;
+..\User\Serial.c:   ^
+..\User\Serial.c(224): error:  #20: identifier "length" is undefined
+..\User\Serial.c:        for( f=0;f<length;f++)
+..\User\Serial.c:                   ^
+..\User\Serial.c(255): error:  #120: return value type does not match the function type
+..\User\Serial.c:       return data;
+..\User\Serial.c:              ^
+..\User\Serial.c(258): error:  #20: identifier "length" is undefined
+..\User\Serial.c:     return length;    
+..\User\Serial.c:            ^
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(58): warning:  #177-D: variable "tbuf_uart1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_uart1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(64): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(70): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 4 warnings, 4 errors
+compiling Delay.c...
+Target not created
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(233): error:  #513: a value of type "int" cannot be assigned to an entity of type "char *"
+..\User\Serial.c:                                       data[length]=d;
+..\User\Serial.c:                                                   ^
+..\User\Serial.c(255): error:  #120: return value type does not match the function type
+..\User\Serial.c:       return data;
+..\User\Serial.c:              ^
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(58): warning:  #177-D: variable "tbuf_uart1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_uart1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(64): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(70): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 4 warnings, 2 errors
+compiling Delay.c...
+Target not created
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(255): error:  #120: return value type does not match the function type
+..\User\Serial.c:       return data;
+..\User\Serial.c:              ^
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(58): warning:  #177-D: variable "tbuf_uart1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_uart1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(64): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(70): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 4 warnings, 1 error
+compiling Delay.c...
+Target not created
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(58): warning:  #177-D: variable "tbuf_uart1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_uart1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(64): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(70): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 4 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=2660 RO-data=36 RW-data=28 ZI-data=3500  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 4 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(58): warning:  #177-D: variable "tbuf_uart1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_uart1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(64): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(70): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 4 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=2660 RO-data=36 RW-data=28 ZI-data=3500  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 4 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(58): warning:  #177-D: variable "tbuf_uart1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_uart1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(64): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(70): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 4 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=2672 RO-data=32 RW-data=12 ZI-data=3516  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 4 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(58): warning:  #177-D: variable "tbuf_uart1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_uart1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(64): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(70): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 4 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=2676 RO-data=32 RW-data=12 ZI-data=3516  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 4 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(58): warning:  #177-D: variable "tbuf_uart1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_uart1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(64): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(70): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 4 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=2668 RO-data=32 RW-data=12 ZI-data=3516  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 4 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(58): warning:  #177-D: variable "tbuf_uart1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_uart1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(64): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(70): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 4 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=2572 RO-data=32 RW-data=12 ZI-data=3516  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 4 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(58): warning:  #177-D: variable "tbuf_uart1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_uart1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(64): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(70): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 4 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=2576 RO-data=32 RW-data=12 ZI-data=3516  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 4 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(256): warning:  #940-D: missing return statement at end of non-void function "GetString"
+..\User\Serial.c:   }
+..\User\Serial.c:   ^
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(58): warning:  #177-D: variable "tbuf_uart1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_uart1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(64): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(70): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 5 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=2580 RO-data=32 RW-data=12 ZI-data=3516  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 5 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(256): warning:  #940-D: missing return statement at end of non-void function "GetString"
+..\User\Serial.c:   }
+..\User\Serial.c:   ^
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(58): warning:  #177-D: variable "tbuf_uart1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_uart1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(64): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(70): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 5 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=2572 RO-data=32 RW-data=12 ZI-data=3516  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 5 Warning(s).
+Build target 'LPC2300'
+compiling Serial.c...
+..\User\Serial.c(256): warning:  #940-D: missing return statement at end of non-void function "GetString"
+..\User\Serial.c:   }
+..\User\Serial.c:   ^
+..\User\Serial.c(220): warning:  #177-D: variable "f" was declared but never referenced
+..\User\Serial.c:       int f=0;
+..\User\Serial.c:           ^
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(58): warning:  #177-D: variable "tbuf_uart1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_uart1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(64): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(70): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 6 warnings, 0 errors
+linking...
+Program Size: Code=2528 RO-data=32 RW-data=16 ZI-data=3496  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 6 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(256): warning:  #940-D: missing return statement at end of non-void function "GetString"
+..\User\Serial.c:   }
+..\User\Serial.c:   ^
+..\User\Serial.c(220): warning:  #177-D: variable "f" was declared but never referenced
+..\User\Serial.c:       int f=0;
+..\User\Serial.c:           ^
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(58): warning:  #177-D: variable "tbuf_uart1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_uart1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(64): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(70): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 6 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=2536 RO-data=32 RW-data=16 ZI-data=3496  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 6 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(256): warning:  #940-D: missing return statement at end of non-void function "GetString"
+..\User\Serial.c:   }
+..\User\Serial.c:   ^
+..\User\Serial.c(220): warning:  #177-D: variable "f" was declared but never referenced
+..\User\Serial.c:       int f=0;
+..\User\Serial.c:           ^
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(58): warning:  #177-D: variable "tbuf_uart1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_uart1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(64): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(70): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 6 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=2536 RO-data=32 RW-data=16 ZI-data=3496  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 6 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(256): warning:  #940-D: missing return statement at end of non-void function "GetString"
+..\User\Serial.c:   }
+..\User\Serial.c:   ^
+..\User\Serial.c(220): warning:  #177-D: variable "f" was declared but never referenced
+..\User\Serial.c:       int f=0;
+..\User\Serial.c:           ^
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(58): warning:  #177-D: variable "tbuf_uart1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_uart1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(64): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(70): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 6 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=2528 RO-data=32 RW-data=16 ZI-data=3496  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 6 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(256): warning:  #940-D: missing return statement at end of non-void function "GetString"
+..\User\Serial.c:   }
+..\User\Serial.c:   ^
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(58): warning:  #177-D: variable "tbuf_uart1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_uart1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(64): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(70): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 5 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=2560 RO-data=32 RW-data=12 ZI-data=3756  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 5 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(256): warning:  #940-D: missing return statement at end of non-void function "GetString"
+..\User\Serial.c:   }
+..\User\Serial.c:   ^
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(58): warning:  #177-D: variable "tbuf_uart1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_uart1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(64): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(70): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 5 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=2656 RO-data=32 RW-data=12 ZI-data=3756  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 5 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(255): warning:  #940-D: missing return statement at end of non-void function "GetString"
+..\User\Serial.c:   }
+..\User\Serial.c:   ^
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(58): warning:  #177-D: variable "tbuf_uart1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_uart1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(64): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(70): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 5 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=2648 RO-data=32 RW-data=8 ZI-data=3768  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 5 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(254): warning:  #940-D: missing return statement at end of non-void function "GetString"
+..\User\Serial.c:   }
+..\User\Serial.c:   ^
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(58): warning:  #177-D: variable "tbuf_uart1" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart1 tbuf_uart1 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(64): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(70): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 5 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=2636 RO-data=32 RW-data=8 ZI-data=3768  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 5 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(196): error:  #29: expected an expression
+..\User\Serial.c:               U1IER = 3;/       
+..\User\Serial.c:                         ^
+..\User\Serial.c(325): warning:  #940-D: missing return statement at end of non-void function "GetString"
+..\User\Serial.c:   }
+..\User\Serial.c:   ^
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(64): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(70): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 4 warnings, 1 error
+compiling Delay.c...
+Target not created
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(325): warning:  #940-D: missing return statement at end of non-void function "GetString"
+..\User\Serial.c:   }
+..\User\Serial.c:   ^
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(64): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(70): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 4 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=3176 RO-data=32 RW-data=8 ZI-data=3768  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 4 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(64): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(70): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 3 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=3148 RO-data=32 RW-data=8 ZI-data=3768  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 3 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(64): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(70): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 3 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=3216 RO-data=32 RW-data=8 ZI-data=3768  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 3 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(64): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(70): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 3 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=3228 RO-data=32 RW-data=8 ZI-data=3768  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 3 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(64): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(70): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 3 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=3228 RO-data=32 RW-data=8 ZI-data=3768  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 3 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(64): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(70): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 3 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=3228 RO-data=32 RW-data=8 ZI-data=3768  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 3 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(64): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(70): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 3 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=3216 RO-data=32 RW-data=8 ZI-data=3768  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 3 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+..\User\main.c(15): error:  #65: expected a ";"
+..\User\main.c:           Serial=GetString(0);
+..\User\main.c:           ^
+..\User\main.c: ..\User\main.c: 0 warnings, 1 error
+compiling Serial.c...
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(64): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(70): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 3 warnings, 0 errors
+compiling Delay.c...
+Target not created
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(64): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(70): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 3 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=3228 RO-data=32 RW-data=8 ZI-data=3768  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 3 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(64): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(70): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 3 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=3228 RO-data=32 RW-data=8 ZI-data=3768  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 3 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(64): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(70): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 3 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=3228 RO-data=32 RW-data=8 ZI-data=3768  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 3 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(64): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(70): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 3 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=3228 RO-data=32 RW-data=8 ZI-data=3768  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 3 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(64): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(70): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 3 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=3228 RO-data=32 RW-data=8 ZI-data=3768  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 3 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(64): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(70): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 3 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=3228 RO-data=32 RW-data=8 ZI-data=3768  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 3 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(64): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(70): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 3 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=3228 RO-data=32 RW-data=8 ZI-data=3768  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 3 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(64): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(70): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 3 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=3228 RO-data=32 RW-data=8 ZI-data=3768  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 3 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(64): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(70): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 3 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=3228 RO-data=32 RW-data=8 ZI-data=3768  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 3 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(64): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(70): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 3 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=3228 RO-data=32 RW-data=8 ZI-data=3768  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 3 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(64): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(70): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 3 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=3228 RO-data=32 RW-data=8 ZI-data=3768  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 3 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(64): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(70): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 3 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=3128 RO-data=32 RW-data=4 ZI-data=3772  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 3 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(64): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(70): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 3 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=3128 RO-data=32 RW-data=4 ZI-data=3772  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 3 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(64): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(70): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 3 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=3116 RO-data=32 RW-data=4 ZI-data=3772  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 3 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(64): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(70): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 3 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=3216 RO-data=32 RW-data=8 ZI-data=3768  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 3 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(64): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(70): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 3 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=3236 RO-data=32 RW-data=8 ZI-data=3768  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 3 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(64): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(70): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 3 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=3096 RO-data=32 RW-data=4 ZI-data=3772  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 3 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(64): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(70): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 3 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=3096 RO-data=32 RW-data=4 ZI-data=3772  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 3 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(64): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(70): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 3 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=3096 RO-data=32 RW-data=4 ZI-data=3772  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 3 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(64): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(70): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 3 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=3096 RO-data=32 RW-data=4 ZI-data=3772  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 3 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(64): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(70): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 3 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=3096 RO-data=32 RW-data=4 ZI-data=3772  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 3 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c(64): warning:  #177-D: variable "tbuf_uart2" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart2 tbuf_uart2 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c(70): warning:  #177-D: variable "tbuf_uart3" was declared but never referenced
+..\User\Serial.c:   static struct buf_uart3 tbuf_uart3 = { 0, 0, };
+..\User\Serial.c:                           ^
+..\User\Serial.c: ..\User\Serial.c: 3 warnings, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=3096 RO-data=32 RW-data=4 ZI-data=3772  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 3 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(208): error:  #247: function "IRQ_UART2" has already been defined
+..\User\Serial.c:   void IRQ_UART2 (void) __irq {
+..\User\Serial.c:        ^
+..\User\Serial.c(212): error:  #20: identifier "U23IIR" is undefined
+..\User\Serial.c:     while (((IIR = U23IIR) & 0x01) == 0) {
+..\User\Serial.c:                    ^
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c: ..\User\Serial.c: 1 warning, 2 errors
+compiling Delay.c...
+Target not created
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c: ..\User\Serial.c: 1 warning, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=3776 RO-data=32 RW-data=4 ZI-data=3772  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 1 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c: ..\User\Serial.c: 1 warning, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=3776 RO-data=32 RW-data=4 ZI-data=3772  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 1 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+..\User\main.c(26): error:  #29: expected an expression
+..\User\main.c:           }      */
+..\User\main.c:                   ^
+..\User\main.c(29): warning:  #12-D: parsing restarts here after previous syntax error
+..\User\main.c:           delay_ms(2000);
+..\User\main.c:                         ^
+..\User\main.c: ..\User\main.c: 1 warning, 1 error
+compiling Serial.c...
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c: ..\User\Serial.c: 1 warning, 0 errors
+compiling Delay.c...
+Target not created
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+..\User\main.c(26): error:  #29: expected an expression
+..\User\main.c:           }      */
+..\User\main.c:                   ^
+..\User\main.c(29): warning:  #12-D: parsing restarts here after previous syntax error
+..\User\main.c:           delay_ms(2000);
+..\User\main.c:                         ^
+..\User\main.c: ..\User\main.c: 1 warning, 1 error
+compiling Serial.c...
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c: ..\User\Serial.c: 1 warning, 0 errors
+compiling Delay.c...
+Target not created
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+..\User\main.c(26): error:  #29: expected an expression
+..\User\main.c:           }      */
+..\User\main.c:                   ^
+..\User\main.c(29): warning:  #12-D: parsing restarts here after previous syntax error
+..\User\main.c:           delay_ms(2000);
+..\User\main.c:                         ^
+..\User\main.c: ..\User\main.c: 1 warning, 1 error
+compiling Serial.c...
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c: ..\User\Serial.c: 1 warning, 0 errors
+compiling Delay.c...
+Target not created
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c: ..\User\Serial.c: 1 warning, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=3828 RO-data=32 RW-data=8 ZI-data=3768  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 1 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c: ..\User\Serial.c: 1 warning, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=3828 RO-data=32 RW-data=8 ZI-data=3768  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 1 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c: ..\User\Serial.c: 1 warning, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=3776 RO-data=32 RW-data=4 ZI-data=3772  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 1 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c: ..\User\Serial.c: 1 warning, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=3776 RO-data=32 RW-data=4 ZI-data=3772  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 1 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c: ..\User\Serial.c: 1 warning, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=3828 RO-data=32 RW-data=8 ZI-data=3768  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 1 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(307): error:  #20: identifier "U32IER" is undefined
+..\User\Serial.c:               U32IER = 3;
+..\User\Serial.c:               ^
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c: ..\User\Serial.c: 1 warning, 1 error
+compiling Delay.c...
+Target not created
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c: ..\User\Serial.c: 1 warning, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=3880 RO-data=32 RW-data=8 ZI-data=3768  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 1 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c: ..\User\Serial.c: 1 warning, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=3828 RO-data=32 RW-data=4 ZI-data=3772  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 1 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c: ..\User\Serial.c: 1 warning, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=3880 RO-data=32 RW-data=8 ZI-data=3768  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 1 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c: ..\User\Serial.c: 1 warning, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=3876 RO-data=32 RW-data=8 ZI-data=3768  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 1 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c: ..\User\Serial.c: 1 warning, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=3876 RO-data=32 RW-data=8 ZI-data=3768  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 1 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c: ..\User\Serial.c: 1 warning, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=3876 RO-data=32 RW-data=8 ZI-data=3768  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 1 Warning(s).
+Build target 'LPC2300'
+assembling LPC2300.s...
+compiling main.c...
+compiling Serial.c...
+..\User\Serial.c(7): warning:  #550-D: variable "tx_restart" was set but never used
+..\User\Serial.c:    static unsigned int tx_restart = 1;   /* NZ if TX restart is required */
+..\User\Serial.c:                        ^
+..\User\Serial.c: ..\User\Serial.c: 1 warning, 0 errors
+compiling Delay.c...
+linking...
+Program Size: Code=4080 RO-data=32 RW-data=8 ZI-data=3768  
+FromELF: creating hex file...
+".\Obj\Serial.axf" - 0 Error(s), 1 Warning(s).
+Clean started: Project: 'Serial'
+   deleting intermediate output files for target 'LPC2300'

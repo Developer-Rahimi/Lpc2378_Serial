@@ -1,33 +1,34 @@
 #include <lpc23xx.h>
-  #include "Serial.h"
- #define CCLK 12000000
-#define PCLK (CCLK/4)
-void delay_s (unsigned int x)
-{
-x=x*CCLK;
-while(x--);
-}
+#include "Serial.h"
+#include "Delay.h"
+char *Serial;
 
-void delay_ms(unsigned int x)
-{
-  x=x*(CCLK/1000);
-  while(x--);
-}
-
-void delay_us(unsigned int x)
-{
-x=x*(CCLK/1000000);
-while(x--);
-}
  int main(void){
-   InitSerial(0);
-   InitSerial(1);
-   InitSerial(2);
-
- while(1){
-  	  SerialPrint(0,"Hello World!\r\n");
-	  SerialPrint(1,"Hello World!\r\n");
-	  SerialPrint(2,"Hello World!\r\n");
-	  delay_ms(1000);
- }
+	   InitSerial(0);
+	   InitSerial(1);
+	   InitSerial(2);
+	   InitSerial(3);
+	 while(1){
+	  	  SerialPrint(0,"Hello World!\r\n");
+		  SerialPrint(1,"Hello World!\r\n");
+		  SerialPrint(2,"Hello World!\r\n");
+		  SerialPrint(3,"Hello World!\r\n");
+		  Serial=GetString(0);
+		  if(GetStringLength(0)){
+		  	 SerialPrint(0,Serial); 
+		  }
+		   Serial=GetString(1);
+		  if(GetStringLength(1)){
+		  	 SerialPrint(1,Serial); 
+		  }	 
+		  Serial=GetString(2);
+		  if(GetStringLength(2)){
+		  	 SerialPrint(2,Serial); 
+		  }	 
+		 	Serial=GetString(3);
+		  if(GetStringLength(3)){
+		  	 SerialPrint(3,Serial); 
+		  }
+		  delay_ms(2000);
+	 }
  }
